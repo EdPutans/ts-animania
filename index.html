@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="src/index.js"></script>
+    <title>Animania</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Animania</h1>
+      <h2><em>Where your favourite anime lives!</em></h2>
+    </header>
+    <aside class="aside">
+      <form class="filter-form">
+        <h3>Filter By</h3>
+        <div class="form__section">
+          <label for="type">Type</label>
+          <select name="type" id="type">
+            <option value="">Choose an option</option>
+            <option value="TV">Tv</option>
+            <option value="Movie">Movie</option>
+          </select>
+        </div>
+        <div class="form__section">
+          <label for="score">Score higher than</label>
+          <input type="number" name="score" id="score" />
+        </div>
+        <div class="form__section">
+          <label for="members">Shortlisted by more than</label>
+          <input type="number" name="members" id="members" />
+        </div>
+      </form>
+    </aside>
+    <section class="sort-section">
+      <form class="sort-form">
+        <label for="sort">Order by</label>
+        <select name="sort" id="sort">
+          <option value="">Choose an option</option>
+          <option value="title">Title</option>
+          <option value="score">Score</option>
+          <option value="members">Shortlisted by</option>
+          <option value="type">Type</option>
+        </select>
+      </form>
+      <form class="sort-form" id="search">
+        <label for="search-input">Search</label>
+        <input
+          type="text"
+          name="search"
+          id="search-input"
+          placeholder="type a name here..."
+        />
+      </form>
+    </section>
+    <main class="main">
+      <section class="container"></section>
+    </main>
+  </body>
+</html>
